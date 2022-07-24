@@ -1,13 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Donut Clicker</title>
-  </head>
-  <body>
-    <div class="container"></div>
-    <script src="./index.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donut Clicker</title>
+  <!-- <link rel="shortcut icon" href=""> -->
+
+  <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="navbar">
+        <h1>Cookie Clicker</h1>
+
+        <div class="menu">
+          <a href="/index.html" class="active">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="container">
+      <div class="leftpane">
+        <section class="auto-clicker">
+          <h1>Auto Clickers</h1>
+
+          <button id="autoclicker-button" type="button"><h3>Buy Autoclicker</h3></button>
+
+          <h3 id="curr-autoclickers">Autoclickers: 0</h3>
+          <h3 id="autoclicker-cost">Autoclicker cost: 10</h3>
+        </section>
+      </div>
+      <div class="middlepane">
+        <section class="cookie-clicker">
+          <h1>Cookie Clicker</h1>
+
+          <input id="cookie-button" type="image" src="/imgs/cookie.png" height="450" width="auto">
+
+          <h3 id="curr-cookies">Cookies: 0</h3>
+          <h3 id="cookies-per-click">Cookies per click: 1</h3>
+          <h3 id="cookies-per-second">Cookies per second: 0</h3>
+        </section>
+      </div>
+      <div class="rightpane">
+        <section class="click-multiplier">
+          <h1>Click Multiplier</h1>
+
+          <button id="multiplier-button" type="button"><h3>Buy Multiplier</h3></button>
+
+          <h3 id="num-multipliers">Multipliers: 0</h3>
+          <h3 id="multiplier-cost">Multiplier cost: 10</h3>
+        </section>
+      </div>
+    </div>
+
+    <section class="reset-button">
+      <button onClick="window.location.reload();"><h3>Reset Game</h3></button>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <h3>© 2022 Blake Printy</h3>
+    </div>
+  </footer>
+
+  <script src="./index.js"></script>
+</body>
+
 </html>
